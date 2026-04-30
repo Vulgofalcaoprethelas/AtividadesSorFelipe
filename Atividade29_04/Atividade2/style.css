@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    background: #4a90e2;
+    color: white;
+    padding: 20px;
+}
+
+main {
+    text-align: center;
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    background: #4a90e2;
+    color: white;
+    padding: 20px;
+}
