@@ -1,0 +1,133 @@
+<!--
+Projeto: Formulário Tech Conference
+Disciplina: Desenvolvimento Web Front-end | Turma: ADS
+Autor: Lorenzo Fernandes Da Silva
+
+Descrição: Formulário HTML5.
+
+Data: 20/08/2007
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário Completo</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Cadastro</h1>
+    </header>
+
+    <main>
+
+        <!-- Formulário de Cadastro -->
+        <section>
+            <p>O formulário de cadastro deve ser desenvolvido aqui</p>
+
+            <form id="formCadastro">
+
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+
+                    <p>Este é um formulário de fieldset.</p>
+                    <p>Nome completo:</p>
+                    <input type="text" id="nome" name="nome" required minlength="3" placeholder="Seu nome">
+
+                    <p>E-mail:</p>
+                    <input type="email" id="email" name="email" required minlength="3" placeholder="Seu e-mail">
+
+                    <p>Data de nascimento:</p>
+                    <input type="date" id="dataNascimento" name="dataNascimento" required>
+
+                    <hr>
+                    <h2>Informações</h2>
+
+                    <p>Selecione o gênero:</p>
+
+                    <input type="radio" name="genero" id="masc" value="masculino" required>
+                    <label for="masc">Masculino</label>
+                    <input type="radio" name="genero" id="femi" value="feminino">
+                    <label for="femi">Feminino</label>
+                    <input type="radio" name="genero" id="n_inf" value="nao_informar">
+                    <label for="n_inf">Não Informar</label>
+
+                    <p>Selecione as áreas de Interesse:</p>
+
+                    <input type="checkbox" name="interesses" id="sport" value="esportes">
+                    <label for="sport">Esportes</label>
+                    <input type="checkbox" name="interesses" id="music" value="Musica">
+                    <label for="music">Música</label>
+                    <input type="checkbox" name="interesses" id="game" value="Jogos">
+                    <label for="game">Jogos</label>
+                    <input type="checkbox" name="interesses" id="tec" value="Tecnologia">
+                    <label for="tec">Tecnologia</label>
+
+                    <p>Selecione seu Estado</p>
+                    <select id="estado" name="estado">
+                        <option value="">Selecione um estado</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="BA">Bahia</option>
+                        <option value="PR">Paraná</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="Outro">Outro</option>
+                    </select>
+                    <hr>
+
+                    <p>Mensagem:</p>
+                    <textarea id="mensagem" name="mensagem" rows="4" cols="50"
+                        placeholder="Digite sua mensagem aqui..."></textarea>
+
+                    <p>Upload de imagem</p>
+                    <input type="file" id="arquivo" name="arquivo" accept=".png, .jpg, .jpeg" required>
+                    <br>
+
+                    <input id="enviar" type="submit" value="Enviar">
+                    <input id="limpar" type="reset" value="Limpar">
+
+                </fieldset>
+            </form>
+        </section>
+
+        <!-- Resultado será exibido aqui, não é necessário editar-->
+        <section>
+            <h2 id="sec-resultado">Resultado</h2>
+            <div id="resultado"></div>
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>&copy; 2026 - Formulário Turma 01 ADS</p>
+
+        <nav aria-label="Documentação">
+            <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                    alt="Documentação HTML" width="40">
+            </a>
+
+            <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                    alt="Documentação CSS" width="40">
+            </a>
+
+            <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                    alt="Documentação JavaScript" width="40">
+            </a>
+        </nav>
+
+    </footer>
+
+</body>
+
+</html>
