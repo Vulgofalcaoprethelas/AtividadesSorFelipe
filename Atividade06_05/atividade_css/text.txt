@@ -1,0 +1,1 @@
+Ignorar esse arquivo, o mesmo serve só para validar o salvamento no Git.
