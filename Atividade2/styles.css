@@ -1,0 +1,23 @@
+body { 
+  padding-top: 60px; font-family: Arial; 
+}
+
+nav { 
+  position: fixed; top: 0; width: 100%; background: black; padding: 10px; 
+}
+
+nav img { 
+  height: 50px; width: auto; 
+}
+
+nav a { 
+  color: white; text-decoration: none; margin-left: 20px; 
+}
+
+h1 { 
+  color: red; 
+}
+
+p { 
+  margin: 20px 0; 
+}
