@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atividade 1</title>
+</head>
+
+<body>
+  <main>
+
+    <label for="name">Nome:</label>
+    <br>
+    <input type="text" id="name" required />  
+    <br><br>
+
+    <label for="password">Senha:</label>
+    <br>
+    <input type="password" id="password" minlength="8" required />
+    <button type="button" id="toggleSenha">Mostrar / Ocultar</button>
+    <p id="passwordError" style="display:none; color:red; margin: 6px 0 0 0;">a senha precisa de pelo menos 8 caracteres</p>
+
+    <br><br><br>
+
+    <label>
+      <input type="checkbox" id="souEstudante" /> sou estudante
+    </label>
+
+    <br><br><br>
+
+    <div id="areaEstudante" style="display:none; margin-top: 8px; border: 1px solid black; padding: 10px;">
+      <label for="instituicao">Instituição:</label>
+      <br>
+      <input type="text" id="instituicao" />
+      <br><br>
+
+      <label for="curso">Curso:</label>
+      <br>
+      <input type="text" id="curso" />
+      <br><br>
+
+      <label for="inicio">Período (início):</label>
+      <br>
+      <input type="date" id="inicio" />
+      <br><br>
+
+      <label for="termino">Período (término):</label>
+      <br>
+      <input type="date" id="termino" />
+    </div>
+
+    <div>
+      <br><br>
+      <button type="submit" id="submitBtn">Enviar</button>
+    </div>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html> 
